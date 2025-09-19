@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- top section -->
+    <section class="header section">
+      <h1>calc</h1>
+      <!-- theme RHS -->
+      <div class="theme">
+        <h1>THEMES</h1>
+        <div class="toggle-container">
+          <div class="toggle-number">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div onclick="toggleTheme()" class="toggler" id="toggler">
+            <div class="ball" id="ball"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="display">
+      <h1 class="display-preview" id="display"></h1>
+    </section>
+    <section class="numbers">
+      <button onclick="addNumberToDisplay(9)" class="button">9</button>
+      <button onclick="addNumberToDisplay(8)" class="button">8</button>
+      <button onclick="addNumberToDisplay(7)" class="button">7</button>
+      <button onclick="del()" class="button reset" id="del">del</button>
+      <button onclick="addNumberToDisplay(4)" class="button">4</button>
+      <button onclick="addNumberToDisplay(5)" class="button">5</button>
+      <button onclick="addNumberToDisplay(6)" class="button">6</button>
+      <button onclick="operate('+')" class="button">+</button>
+      <button onclick="addNumberToDisplay(1)" class="button">1</button>
+      <button onclick="addNumberToDisplay(2)" class="button">2</button>
+      <button onclick="addNumberToDisplay(3)" class="button">3</button>
+      <button onclick="operate('-')" class="button">-</button>
+      <button onclick="addNumberToDisplay('.')" class="button">.</button>
+      <button onclick="addNumberToDisplay(0)" class="button">0</button>
+      <button onclick="operate('/')" class="button">/</button>
+      <button onclick="operate('*')" class="button">x</button>
+      <button onclick="reset()" class="doublem double reset">RESET</button>
+      <button onclick="eval()" class="button double eval">=</button>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

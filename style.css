@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(108, 73, 233);
+  color: white;
+}
+
+section {
+  width: 40%;
+  margin: auto;
+}
+
+/* -------Header Section------- */
+.header {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.header .theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10;
+}
+
+.theme h1 {
+  font-size: 0.8rem;
+}
+
+.toggle-container {
+  padding: 10px;
+  width: 70px;
+}
+
+.toggle-container .toggle-number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5;
+}
+
+.toggle-container .toggler {
+  background: #000;
+  height: 20px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: all 700ms ease;
+}
+
+.toggler .ball {
+  width: 34%;
+  height: 100%;
+  background-color: red;
+  border-radius: 100%;
+  transition: all 700ms ease;
+  position: absolute;
+}
+
+.toggle-left {
+  left: 8%;
+}
+
+.toggle-middle {
+  left: 33%;
+}
+
+.toggle-right {
+  left: 60%;
+}
+
+/* Display section */
+.display {
+  margin: 20px 0px;
+}
+
+.display .display-preview {
+  padding: 10px 15px;
+  background-color: #181f32;
+  color: white;
+  border-radius: 10px;
+  height: 100px;
+  border: none;
+  font-size: 3rem;
+}
+
+/* button section */
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 23.9%);
+  grid-template-rows: repeat(5, 100px);
+  padding: 10px;
+  background-color: #252d44;
+  gap: 10px;
+}
+
+.numbers .double {
+  column-span: 2;
+}
+
+.numbers button {
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+
+.eval {
+  background-color: #d13f30;
+  color: white;
+  column-span: 2;
+}
+.reset {
+  background-color: #647299;
+  color: white;
+  column-span: 2;
+}
